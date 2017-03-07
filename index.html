@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online Whiteboard</title>
+	<meta charset="utf-8">
+	<!--Prevents iPhone, iPad, and touch devices from scrolling or zooming when touched-->
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/css/font-awesome.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+
+	<!--Load the OrbiterMicro JavaScript library (non-minified version). Use during development.-->
+	<script type="text/javascript" src="http://cdn.unioncloud.io/OrbiterMicro_latest.js"></script>
+	<!--Load the OrbiterMicro JavaScript library (minified version). Use for production.-->
+	<!--<script type="text/javascript" src="http://cdn.unioncloud.io/OrbiterMicro_latest_min.js"></script>-->
+	 
+	<!--Load UnionDraw application code-->
+	<script src="board.js"></script>
+	<!--Load color-->
+	<script src="jscolor.js"></script>
+
+	
+</head>
+<body ng-app="myapp" id="page1">
+
+
+
+
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<!--container-->
+			<div class="container">
+				<!--navbar header-->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle Navigation</span> <!--device wiith screen reader can only see-->
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					
+					<span><h2>Whiteboard Online</h2></span>
+								
+				</div> <!--navbar header-->
+			
+				<!--navbar-->
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li>&nbsp;&nbsp;</li>
+						<li><a href="/index.html" class="btn btn-success home" style="color:white">
+							<span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;Home</a>
+						</li>
+						<li>&nbsp;&nbsp;</li>
+						<li><a href="/christmas.html" class="btn btn-success js" style="color:white">
+							<span><i class="fa fa-jsfiddle" aria-hidden="true"></i></span>&nbsp;&nbsp;XMas</a>
+						</li>
+						<li>&nbsp;&nbsp;</li>
+				
+						<li><a href="/game.html" class="btn btn-success game" style="color:white">
+							<span ><i class="fa fa-gamepad" aria-hidden="true"></i></span>&nbsp;&nbsp;Game</a>
+						</li>
+						<li>&nbsp;&nbsp;</li>
+						<li><a href="http://facebook.com" class="btn btn-success facebook" style="color:white">
+							<span><i class="fa fa-facebook-official" aria-hidden="true"></i></span>&nbsp;&nbsp;Facebook</a>
+						</li>
+						<li>&nbsp;&nbsp;</li>
+						<li><a href="/facetime" class="btn btn-success facetime" style="color:white">
+							<span class="glyphicon glyphicon-facetime-video"></span>&nbsp;&nbsp;FaceTime</a>
+						</li>
+						<li>&nbsp;&nbsp;</li>
+						<!--Login Button-->
+						<li><ul class="nav navbar-default navbar-right">
+								<li><p style="font-size:9pt;" class="navbar-text">Already have an account?</p></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
+									<ul id="login-dp" class="dropdown-menu">
+										<li>
+											<div class="row">
+												<div class="col-md-12">
+													Login via
+													<div class="social-buttons">
+														<a href="javascript:void(0);" onclick="fbLogin()" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+														<a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+													</div>
+													or
+													<form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+														<div class="form-group">
+															<label class="sr-only" for="exampleInputEmail2">Email address</label>
+															<input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
+														</div>
+														<div class="form-group">
+															<label class="sr-only" for="exampleInputPassword2">Password</label>
+															<input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+															<div class="help-block text-right"><a href="">Forget the password ?</a></div>
+														</div>
+														<div class="form-group">
+															<button type="submit" class="btn btn-primary btn-block">Sign in</button>
+														</div>
+														<div class="checkbox">
+															<label>
+																<input type="checkbox"> keep me logged-in
+															</label>
+														</div>
+													</form>
+												</div>
+												<div class="bottom text-center">
+													New here ? <a href="/src/signup.html"><b>Join Us</b></a>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li><!-- End login button-->
+					</ul>
+					
+				</div> <!--/nabar-->
+					
+		</div>
+	</nav> <!--end nav-->	
+	<div class="space" style="height:200px;width:100px;"></div>
+	<!--Drop down menus for selecting line thickness and color-->
+	<div class="row">
+		<div class="row">
+		  	<div id="tools" class="row-xs-12" >
+		  		<!--create button-->
+			  	<a type="button" class="glyphicon glyphicon-plus-sign" id="new">Create</a>
+			  	<!--eraser icon-->
+			  	<i class="fa fa-eraser" aria-hidden="true"></i>
+			  	<!--clean button-->
+				<button onclick="clean()">Clean</button>
+				Size:
+					<select id="thickness">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="10">10</option>
+						<option value="20">20</option>
+					</select>
+					 	
+				Color: <input class="jscolor {position:'right'}" onchange="update(this.jscolor)" id="color" value="000000">
+		  	</div>	
+		</div>
+		<!--The canvas where drawings will be displayed-->
+		<div class="row">    
+			<div class="container">
+			 	<canvas id="canvas"></canvas>
+			</div>
+		</div>
+	</div>
+
+
+<!--Tool bar -->
+	<div class="row">
+  		<!--A status text field, for displaying connection information-->
+  		<div id="status" style="margin: 0 auto;"></div>
+  	</div>
+<!--contact us -->
+<footer style="background-color:green; color:white;padding-top:25px;padding-bottom:25px;">
+		
+		<div class="row">
+			<!--new col-->
+			<div class="col-xs-4">
+				<span>Whiteboard Online</span>
+			</div> <!--end col-->
+			<!--new col-->
+			<div class="footer-center col-xs-4 col-md-4 cd-lg-4">
+					<div class="footer-center">
+						<span>AdChoices</span>
+					</div>
+					<div class="footer-center">
+						<span>Privacy</span>
+					</div>
+			</div> <!--end col-->
+			<!--new col-->
+			<div class="col-xs-4"> 
+					<span>Developed By Daniel Nguyen</span>
+			</div> <!--end col-->
+		</div>
+		
+	
+
+</footer>
+
+<script>
+		window.fbAsyncInit = function() {
+	    // FB JavaScript SDK configuration and setup
+	    FB.init({
+	      appId      : '1006551369445523', // FB App ID
+	      cookie     : true,  // enable cookies to allow the server to access the session
+	      xfbml      : true,  // parse social plugins on this page
+	      version    : 'v2.8' // use graph api version 2.8
+		  });
+		    
+		    // Check whether the user already logged in
+		    FB.getLoginStatus(function(response) {
+		    	if (response.status === 'connected') {
+		            //display user data
+		            getFbUserData();
+		        }
+		    });
+		};
+
+		// Load the JavaScript SDK asynchronously
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+
+		// Facebook login with JavaScript SDK
+		function fbLogin() {
+			FB.login(function (response) {
+				if (response.authResponse) {
+		            // Get and display the user profile data
+		            getFbUserData();
+		        } else {
+		        	document.getElementById('status').innerHTML = 'User cancelled login or did not fully authorize.';
+		        }
+		    }, {scope: 'email'});
+		}
+
+		// Fetch the user profile data from facebook
+		function getFbUserData(){
+			FB.api('/me', {locale: 'en_US', fields: 'id,first_name,last_name,email,link,gender,locale,picture'},
+				function (response) {
+					document.getElementById('fbLink').setAttribute("onclick","fbLogout()");
+					document.getElementById('fbLink').innerHTML = 'Logout from Facebook';
+					document.getElementById('status').innerHTML = 'Thanks for logging in, ' + response.first_name + '!';
+					document.getElementById('userData').innerHTML = '<p><b>FB ID:</b> '+response.id+'</p><p><b>Name:</b> '+response.first_name+' '+response.last_name+'</p><p><b>Email:</b> '+response.email+'</p><p><b>Gender:</b> '+response.gender+'</p><p><b>Locale:</b> '+response.locale+'</p><p><b>Picture:</b> <img src="'+response.picture.data.url+'"/></p><p><b>FB Profile:</b> <a target="_blank" href="'+response.link+'">click to view profile</a></p>';
+				});
+		}
+
+		// Logout from facebook
+		function fbLogout() {
+			FB.logout(function() {
+				document.getElementById('fbLink').setAttribute("onclick","fbLogin()");
+				document.getElementById('fbLink').innerHTML = '<img src="fblogin.png"/>';
+				document.getElementById('userData').innerHTML = '';
+				document.getElementById('status').innerHTML = 'You have successfully logout from Facebook.';
+			});
+		}
+	</script>
+</body>
+</html>

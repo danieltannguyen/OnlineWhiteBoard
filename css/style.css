@@ -1,0 +1,89 @@
+
+.same-vertical {    
+    display: inline-block;
+    margin: 0 auto;
+    vertical-align: top;
+    text-align: center;
+}
+#page1 {
+    background: url(/picture/background.jpg);
+}
+
+.row{
+    text-align: center;
+}
+.space {
+    text-align: center;
+}
+#login-dp{
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+    background-color:rgba(255,255,255,.8);
+}
+#login-dp .help-block{
+    font-size:12px    
+}
+#login-dp .bottom{
+    background-color:rgba(255,255,255,.8);
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+}
+#login-dp .social-buttons{
+    margin:12px 0    
+}
+#login-dp .social-buttons a{
+    width: 49%;
+}
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+.btn-fb{
+    color: #fff;
+    background-color:#3b5998;
+}
+.btn-fb:hover{
+    color: #fff;
+    background-color:#496ebc 
+}
+.btn-tw{
+    color: #fff;
+    background-color:#55acee;
+}
+.btn-tw:hover{
+    color: #fff;
+    background-color:#59b5fa;
+}
+@media(max-width:768px){
+    #login-dp{
+        background-color: inherit;
+        color: #fff;
+    }
+    #login-dp .bottom{
+        background-color: inherit;
+        border-top:0 none;
+    }
+}
+.centered-form{
+    margin-top: 60px;
+}
+
+.centered-form .panel{
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
+}
+#tools{
+    width:600px;
+    height:25px;
+    border: #000000; 
+    background-color: 
+    gray; margin: 0 auto;
+}
+#canvas {
+    border: solid #000000;
+    width:600px; 
+    height: 400px; 
+    margin: 0 auto;
+    background-color: #fff;
+}

@@ -67,12 +67,12 @@
 							<span ><i class="fa fa-gamepad" aria-hidden="true"></i></span>&nbsp;&nbsp;Game</a>
 						</li>
 						<li>&nbsp;&nbsp;</li>
-						<li><a href="http://facebook.com" class="btn btn-success facebook" style="color:white">
+						<li><a href="http://facebook.com" target="facebook tab" data-popup="true" class="btn btn-success facebook" style="color:white">
 							<span><i class="fa fa-facebook-official" aria-hidden="true"></i></span>&nbsp;&nbsp;Facebook</a>
 						</li>
 						<li>&nbsp;&nbsp;</li>
-						<li><a href="/webrtc-web/work/index.html" target="_blank" class="btn btn-success facetime" style="color:white">
-							<span class="glyphicon glyphicon-facetime-video"></span>&nbsp;&nbsp;FaceTime</a>
+						<li><a href="/webrtc-sdk/index.html" data-popup="true"  target="videocall" class="btn btn-success facetime" style="color:white">
+							<span class="glyphicon glyphicon-facetime-video"></span>&nbsp;&nbsp;Video Calls</a>
 						</li>
 						<li>&nbsp;&nbsp;</li>
 						<!--Login Button-->
@@ -147,7 +147,8 @@
 						<option value="20">20</option>
 					</select>
 					 	
-				Color: <input class="jscolor {position:'right'}" onchange="update(this.jscolor)" id="color" value="000000">
+				Color: 
+				<input class="jscolor {position:'right'}" onchange="update(this.jscolor)" id="color" value="#000000">
 		  	</div>	
 		</div>
 		<!--The canvas where drawings will be displayed-->

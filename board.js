@@ -125,7 +125,7 @@ function initCanvas () {
  
   // Set control panel defaults
   document.getElementById("thickness").selectedIndex = 0;
-  document.getElementById("color").value = '#' +000000;
+  document.getElementById("color").value;
 }
 // clean whiteboard
 function clean() {

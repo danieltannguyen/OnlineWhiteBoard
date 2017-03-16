@@ -170,7 +170,7 @@ function initOrbiter () {
   msgManager = orbiter.getMessageManager();
   
   // Connect to Union Server (at the public testing site)
-  orbiter.connect("https://tryunion.com", 80);
+  orbiter.connect("tryunion.com", 80);
 }
 
 //==============================================================================

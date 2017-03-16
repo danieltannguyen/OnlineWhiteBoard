@@ -5,16 +5,31 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="/css/style.css">
 	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="/js/bootstrap.min.js"></script>
 </head>
-<body id="page2">
+<body id="xmasPage">
 
 	<!--Drawing Christmas tree-->
-	<div id="wish" style="font-family:'ChopinScript';font-size:400%;color:red;text-align:center;&|||f;">Merry Christmas</div>
-	<div id="top" style="font-size:300%;text-align:center;">&starf;</div>	
-	
-	<p id="branch"></p>	
-	<div id="break"></div>
-	<script type="text/javascript">
+
+	<div class="container" style="position: absolute; bottom:15px; margin: 0 auto; ">
+		<div class="row">
+			<div class="col-xs-6">
+				<p id="wish" style="font-family:'ChopinScript';font-size:200%;color:red;text-align:right;margin:0;">Merry</p>
+			</div>
+			<div class="col-xs-6">
+				<p id="wish" style="font-family:'ChopinScript';font-size:200%;color:red;text-align:left;margin:0;">Christmas</p>
+			</div>
+				
+		</div>
+		<div class="row">
+			<div id="top" style="font-size:300%;text-align:center;">&starf;</div>	
+			<script type="text/javascript">
 		var x;
 		var top = document.getElementById('top');
 		var branch = document.getElementById('branch');
@@ -145,8 +160,18 @@
 
 
 		</script>
-		<img src="picture/footersnow.png" 
+
+		</div>
+		<div class="row">
+			<p id="branch"></p>	
+		</div>
+	</div>
+	<footer>
+		<img src="/picture/footersnow.png" 
 			style="position: absolute; bottom: 0!important; width: 100%; height: 300px; z-index: -1;">
+		
+	</footer>
+	
 		
 </body>
 </html>

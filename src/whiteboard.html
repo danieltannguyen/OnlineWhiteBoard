@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Whiteboard</title>
+	<meta charset="utf-8">
+	<!--Prevents iPhone, iPad, and touch devices from scrolling or zooming when touched-->
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+	
+	<!--[if lt IE 9]>
+	<script src="/src/excanvas.js"></script>
+	<![endif]-->
+
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/css/font-awesome.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="/js/bootstrap.min.js"></script>
+
+	<!--Load the OrbiterMicro JavaScript library (non-minified version). Use during development.-->
+	<script type="text/javascript" src="http://cdn.unioncloud.io/OrbiterMicro_latest.js"></script>
+	<!--Load the OrbiterMicro JavaScript library (minified version). Use for production.-->
+	<!--<script type="text/javascript" src="http://cdn.unioncloud.io/OrbiterMicro_latest_min.js"></script>-->
+	 
+	<!--Load UnionDraw application code-->
+	<script src="/src/board.js"></script>
+	<!--Load color-->
+	<script src="/src/jscolor.js"></script>
+</head>
+<body>
+
+	<!--Drop down menus for selecting line thickness and color-->
+	<div class="container">
+		
+		<!--The canvas where drawings will be displayed-->
+		<div class="row">    	
+			<canvas id="canvas"></canvas>
+		</div>
+		<div class="status">
+			  <!--A status text field, for displaying connection information-->
+ 			 <p id="status"></p>
+ 		</div>
+
+		<div class="col">
+			<div class="submenu col-8" id="color">
+				
+				<div class="menu-item">
+					<button type="button"  style="font-size:11px;" onclick="toggle();">Menu</button>
+				</div>
+				<div class="menu-item">
+					<div id="black" onclick="colorSelectListener('#000000')" class="color-icon" style="background: #000000;"></div>
+				</div>
+				<div class="menu-item">
+					<div id="red" onclick="colorSelectListener('#F34336')" class="color-icon" style="background: #F34336;"></div>
+				</div>
+				<div class="menu-item">
+					<div id="green" onclick="colorSelectListener('#4CAF50')" class="color-icon" style="background: #4CAF50;"></div>
+				</div>
+				<div class="menu-item">
+					<div id="blue" onclick="colorSelectListener('#2196F3')" class="color-icon" style="background: #2196F3;"></div>
+				</div>
+				<div class="menu-item">
+					<div id="yellow" onclick="colorSelectListener('#FFC107')" class="color-icon" style="background: #FFC107;"></div>
+				</div>
+				<div class="menu-item">
+					<div id="purple" onclick="colorSelectListener('#9C27B0')" class="color-icon" style="background: #9C27B0;"></div>
+				</div>
+				<div class="menu-item">
+					<div id="pink" onclick="colorSelectListener('#E91E63')" class="color-icon" style="background: #E91E63;"></div>
+				</div>
+				<div class="menu-item">
+					<div id="brown" onclick="colorSelectListener('#795548')" class="color-icon" style="background: #795548;"></div>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div id="tools" style="display: none; " class="col-collapse" >
+				<!--clean button-->
+				<button onclick="clearCanvas()">Clear&nbsp;</button>
+				<!--eraser button-->
+				<i class="fa fa-eraser" aria-hidden="true" onclick="colorSelectListener('#ffffff')">&nbsp;</i>
+
+				Size:
+				<select id="thickness">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="10">10</option>
+					<option value="20">20</option>
+				</select>
+			</div>	
+		</div>
+	</div>
+	<!-- menu button trigger-->
+	<script type="text/javascript">
+  		var toggle = function() {
+	  		var mydiv = document.getElementById('tools');
+	  		if (mydiv.style.display === 'block' || mydiv.style.display === '')
+	    		mydiv.style.display = 'none';
+	  		else
+	   		 mydiv.style.display = 'block'
+  		}
+</script>
+	</script>
+</body>
+</html>

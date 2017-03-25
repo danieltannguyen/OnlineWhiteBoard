@@ -9,14 +9,16 @@ npm install express
 
 node server.js
 
-localhost://5000
+Https://localhost://5000
+
+Https://onlinewhiteboard.herokuapp.com
 
 Under developement
 
-Facebook login
-Twitter login
-Sharing link
-Redesign Video calls
-Redesign Christmas page
+Facebook login, 
+Twitter login, 
+Sharing link, 
+Redesign Video calls, 
+Redesign Christmas page.
 
 

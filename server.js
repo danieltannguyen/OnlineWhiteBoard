@@ -2,10 +2,10 @@ var express =require('express');
 var app = express();
 
 //set port
-var port = process.env.PORT || 5000;
+var port = process.env.PORT || 4000;
 (function() {
   var io;
-  io = require('socket.io').listen(5000);
+  io = require('socket.io').listen(4000);
   io.sockets.on('connection', function(socket) {
     socket.on('drawClick', function(data) {
       socket.broadcast.emit('draw', {
@@ -20,9 +20,9 @@ var port = process.env.PORT || 5000;
 app.use(express.static(__dirname));
 
 app.get("/", function (req,res) {
-	res.render("index");
+  res.render("index");
 });
 
 app.listen(port, function() {
-	console.log("app is running on port 5000!")
+  console.log("app is running on port 4000!")
 })

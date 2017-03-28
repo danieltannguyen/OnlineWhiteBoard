@@ -9,7 +9,7 @@ var msgManager;
 // list of valid client/server UPC messages. See: http://unionplatform.com/specs/upc/
 var UPC = net.user1.orbiter.UPC;
 // The ID of the room users will join in order to draw together
-var roomID = "daniel.whiteboard";
+var roomID = document.getElementById("RoomID").value;
 // A hash of client attribute names used in this application. Each client sets a
 // "thickness" attribute and a "color" attribute, specify the thickness and 
 // color of the current line being drawn.
@@ -135,6 +135,7 @@ function registerInputListeners () {
   document.ontouchmove = touchMoveListener;
   document.ontouchend = touchUpListener;
   document.getElementById("thickness").onchange = thicknessSelectListener;
+  document.getElementById('RoomID').onchange = roomSelectListener;
   //document.getElementById("000000").onclick = colorSelectListener("#000000");
 
 }
@@ -564,7 +565,18 @@ function thicknessSelectListener (e) {
   // automatically scrolls the page, so scroll back to the top-left. 
   iPhoneToTop();
 }
+function roomSelectListener(roomIdSelected){
+        
+        roomID = document.getElementById(roomIdSelected).value;
+        document.getElementById('RoomID').value = roomID; //set roomId = new roomID
+        
+        //call readListener() again 
+        readyListener();
 
+        document.forms['formJoin'].submit();
+        document.getElementById('join').style.display = 'none';
+
+}
 // Triggered when an option in the "line color" menu is selected
 function colorSelectListener (colorSelected) {
   // Determine which option was selected

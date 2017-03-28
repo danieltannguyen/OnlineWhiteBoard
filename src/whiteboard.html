@@ -22,16 +22,16 @@
 	<script src="/js/bootstrap.min.js"></script>
 
 	<!--Load the OrbiterMicro JavaScript library (non-minified version). Use during development.-->
-	<!--<script type="text/javascript" src="http://cdn.unioncloud.io/OrbiterMicro_latest.js"></script>-->
+	<script type="text/javascript" src="http://cdn.unioncloud.io/OrbiterMicro_latest_min.js"></script>
 	<!--Load the OrbiterMicro JavaScript library (minified version). Use for production.-->
-	<script type="text/javascript" src="OrbiterMicro_latest_min.js"></script>
+	<!--<script type="text/javascript" src="http://cdn.unioncloud.io/OrbiterMicro_latest_min.js"></script>-->
 	 
-	<!--Load UnionDraw application code-->
-	<script src="/src/board.js"></script>
+
 	<!--Load color-->
 	<script src="/src/jscolor.js"></script>
 </head>
 <body>
+	
 
 	<!--Drop down menus for selecting line thickness and color-->
 	<div class="container">
@@ -44,7 +44,7 @@
 			  <!--A status text field, for displaying connection information-->
  			 <p id="status"></p>
  		</div>
-
+ 		
 		<div class="col">
 			<div class="submenu col-8" id="color">
 				
@@ -97,6 +97,29 @@
 			</div>	
 		</div>
 	</div>
+	<!--inital input-->
+	<input type="text" value="whiteboard" id="RoomID" style="display:none;">
+
+	<!--Join button-->
+	<button class="btn btn-success Join" onclick="join()" style="left:10px;position:absolute;">Join</button>
+		<form id="formJoin">
+			<fieldset id="join" style="max-width:200px; left:80px;position:absolute; display:none;">
+		    <legend>Enter Room ID</legend>
+		    <input id="roomID" type="text" size="12" value="" /> 
+		    <a href="#" onClick="roomSelectListener('roomID')" type="submit">Join</a>
+			</fieldset>
+		</form>
+		
+
+	<!--Share button-->
+	<button class="btn btn-success Share" onclick="share()" style="left:10px;top:40px;position:absolute;">Share</button>
+		<fieldset id="share" style="max-width:200px; left:80px;position:absolute; display:none">
+		    <legend>Share this room ID</legend>
+		    <input id="roomId" type="text" size="12" value="id" /> <!--value will be replaced with a ramdom value-->
+		    <a href="#" onClick="copyfieldvalue(event, 'roomId');return false">Copy</a>
+			<a id="answer"></a>
+		</fieldset>
+
 	<!-- menu button trigger-->
 	<script type="text/javascript">
   		var toggle = function() {
@@ -106,7 +129,52 @@
 	  		else
 	   		 mydiv.style.display = 'block'
   		}
-</script>
+  	
+  		document.getElementById('RoomID').value = Math.random().toString(36).substring(2,7);
+
+  		function join(){
+  			var inputform = document.getElementById('join');
+  			if(inputform.style.display === 'block' || inputform.style.display === ''){
+				inputform.style.display = 'none'
+			}
+			else {
+				inputform.style.display = 'block';
+			}
+  		}
+
+
+		function share() {
+
+		  	var share = document.getElementById('share');
+  			if(share.style.display === 'block' || share.style.display === ''){
+				share.style.display = 'none'
+			}
+			else {
+				share.style.display = 'block';
+			}
+			document.getElementById("roomId").value = document.getElementById('RoomID').value;
+		}
+
+		function copyfieldvalue(e, id){
+   			var field = document.getElementById(id);
+    		// Select some text (you could also create a range)
+   			field.select(); 
+
+		   	// Use try & catch for unsupported browser
+		   	try {
+		       // The important part (copy selected text)
+		       var successful = document.execCommand('copy');
+
+		       if(successful) answer.innerHTML = 'Copied!';
+		       else answer.innerHTML = 'Unable to copy!';
+		   	} 
+		   	catch (err) {
+		       answer.innerHTML = 'Unsupported Browser!';
+		   	}
+		}
+
 	</script>
+		<!--Load UnionDraw application code-->
+	<script src="/src/board.js"></script>
 </body>
 </html>

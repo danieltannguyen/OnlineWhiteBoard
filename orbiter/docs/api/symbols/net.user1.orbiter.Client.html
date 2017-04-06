@@ -1,0 +1,1804 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta charset="utf-8"></meta>
+		<meta name="generator" content="JsDoc Toolkit"></meta>
+		<title>net.user1.orbiter.Client | Orbiter 2.1.2 Release (Build 19)</title>
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;"></meta>
+		<meta name="mobileoptimized" content="0"></meta>
+	
+		<link rel="stylesheet" href="../css/all.css" media="all"></link>
+		<link rel="stylesheet" href="../css/handheld.css" media="only screen and (max-width: 660px)"></link>
+		<link rel="stylesheet" href="../css/handheld.css" media="handheld"></link>
+		<link rel="stylesheet" href="../css/screen.css" media="screen and (min-width: 661px)"></link>
+
+		<script src="../javascript/all.js"></script>
+		<!--[if lt IE 9]>
+			<script src="../javascript/html5.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+<div class="index">
+	<div class="menu">
+	<!--
+		<div class="indexLinks">
+			<a href="../index.html">Classes</a>
+			<a href="../files.html">Files</a>
+		</div>
+		-->
+	
+		<h2 class="heading1">Orbiter API</h2>
+		
+		<input type="text" name="classFilter" class="classFilter" id="ClassFilter" placeholder="Filter"></input>
+		
+		2.1.2 Release (Build 19)
+		
+		<br><br>
+		
+		<nav>
+			<ul class="classList" id="ClassList">
+				
+					<li><a href="../symbols/net.user1.events.Event.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>events<span class='break'> </span>.<span class='break'> </span>Event</a></li>
+				
+					<li><a href="../symbols/net.user1.events.EventDispatcher.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>events<span class='break'> </span>.<span class='break'> </span>EventDispatcher</a></li>
+				
+					<li><a href="../symbols/net.user1.events.EventListener.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>events<span class='break'> </span>.<span class='break'> </span>EventListener</a></li>
+				
+					<li><a href="../symbols/net.user1.logger.ConsoleLogger.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>logger<span class='break'> </span>.<span class='break'> </span>ConsoleLogger</a></li>
+				
+					<li><a href="../symbols/net.user1.logger.LogEvent.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>logger<span class='break'> </span>.<span class='break'> </span>LogEvent</a></li>
+				
+					<li><a href="../symbols/net.user1.logger.Logger.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>logger<span class='break'> </span>.<span class='break'> </span>Logger</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.AccountEvent.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>AccountEvent</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.AccountManager.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>AccountManager</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.AccountManagerEvent.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>AccountManagerEvent</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.Attribute.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>Attribute</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.AttributeCollection.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>AttributeCollection</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.AttributeEvent.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>AttributeEvent</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.Client.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>Client</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.ClientEvent.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>ClientEvent</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.ClientManager.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>ClientManager</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.ClientManagerEvent.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>ClientManagerEvent</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.Connection.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>Connection</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.ConnectionEvent.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>ConnectionEvent</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.ConnectionManager.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>ConnectionManager</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.ConnectionManagerEvent.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>ConnectionManagerEvent</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.ConnectionMonitor.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>ConnectionMonitor</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.ConnectionRefusal.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>ConnectionRefusal</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.ConnectionRefusalReason.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>ConnectionRefusalReason</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.ConnectionState.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>ConnectionState</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.ConnectionType.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>ConnectionType</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.CustomClient.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>CustomClient</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.filters.AndGroup.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>filters<span class='break'> </span>.<span class='break'> </span>AndGroup</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.filters.AttributeComparison.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>filters<span class='break'> </span>.<span class='break'> </span>AttributeComparison</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.filters.AttributeFilter.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>filters<span class='break'> </span>.<span class='break'> </span>AttributeFilter</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.filters.BooleanGroup.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>filters<span class='break'> </span>.<span class='break'> </span>BooleanGroup</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.filters.BooleanGroupType.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>filters<span class='break'> </span>.<span class='break'> </span>BooleanGroupType</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.filters.CompareType.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>filters<span class='break'> </span>.<span class='break'> </span>CompareType</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.filters.Filter.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>filters<span class='break'> </span>.<span class='break'> </span>Filter</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.filters.FilterSet.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>filters<span class='break'> </span>.<span class='break'> </span>FilterSet</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.filters.OrGroup.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>filters<span class='break'> </span>.<span class='break'> </span>OrGroup</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.Gateway.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>Gateway</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.GatewayBandwidth.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>GatewayBandwidth</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.HTTPConnection.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>HTTPConnection</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.HTTPDirectConnection.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>HTTPDirectConnection</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.HTTPIFrameConnection.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>HTTPIFrameConnection</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.MessageManager.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>MessageManager</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.Messages.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>Messages</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.ModuleDefinition.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>ModuleDefinition</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.ModuleType.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>ModuleType</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.Orbiter.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>Orbiter</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.OrbiterEvent.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>OrbiterEvent</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.Room.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>Room</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.RoomClassRegistry.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>RoomClassRegistry</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.RoomEvent.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>RoomEvent</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.RoomIDParser.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>RoomIDParser</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.RoomManager.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>RoomManager</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.RoomManagerEvent.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>RoomManagerEvent</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.RoomModules.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>RoomModules</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.RoomSettings.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>RoomSettings</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.SecureHTTPDirectConnection.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>SecureHTTPDirectConnection</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.SecureHTTPIFrameConnection.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>SecureHTTPIFrameConnection</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.SecureWebSocketConnection.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>SecureWebSocketConnection</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.SecurityRole.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>SecurityRole</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.Server.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>Server</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.ServerEvent.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>ServerEvent</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.snapshot.AccountListSnapshot.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>snapshot<span class='break'> </span>.<span class='break'> </span>AccountListSnapshot</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.snapshot.AccountSnapshot.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>snapshot<span class='break'> </span>.<span class='break'> </span>AccountSnapshot</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.snapshot.BannedListSnapshot.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>snapshot<span class='break'> </span>.<span class='break'> </span>BannedListSnapshot</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.snapshot.ClientCountSnapshot.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>snapshot<span class='break'> </span>.<span class='break'> </span>ClientCountSnapshot</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.snapshot.ClientListSnapshot.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>snapshot<span class='break'> </span>.<span class='break'> </span>ClientListSnapshot</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.snapshot.ClientSnapshot.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>snapshot<span class='break'> </span>.<span class='break'> </span>ClientSnapshot</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.snapshot.GatewaysSnapshot.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>snapshot<span class='break'> </span>.<span class='break'> </span>GatewaysSnapshot</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.snapshot.NodeListSnapshot.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>snapshot<span class='break'> </span>.<span class='break'> </span>NodeListSnapshot</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.snapshot.RoomListSnapshot.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>snapshot<span class='break'> </span>.<span class='break'> </span>RoomListSnapshot</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.snapshot.RoomSnapshot.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>snapshot<span class='break'> </span>.<span class='break'> </span>RoomSnapshot</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.snapshot.ServerModuleListSnapshot.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>snapshot<span class='break'> </span>.<span class='break'> </span>ServerModuleListSnapshot</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.snapshot.Snapshot.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>snapshot<span class='break'> </span>.<span class='break'> </span>Snapshot</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.snapshot.SnapshotEvent.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>snapshot<span class='break'> </span>.<span class='break'> </span>SnapshotEvent</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.snapshot.UPCStatsSnapshot.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>snapshot<span class='break'> </span>.<span class='break'> </span>UPCStatsSnapshot</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.Statistics.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>Statistics</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.Status.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>Status</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.SynchronizationState.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>SynchronizationState</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.System.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>System</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.UPC.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>UPC</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.UPCProcessingRecord.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>UPCProcessingRecord</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.UserAccount.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>UserAccount</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.VersionNumber.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>VersionNumber</a></li>
+				
+					<li><a href="../symbols/net.user1.orbiter.WebSocketConnection.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>orbiter<span class='break'> </span>.<span class='break'> </span>WebSocketConnection</a></li>
+				
+					<li><a href="../symbols/net.user1.utils.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>utils</a></li>
+				
+					<li><a href="../symbols/net.user1.utils.ArrayUtil.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>utils<span class='break'> </span>.<span class='break'> </span>ArrayUtil</a></li>
+				
+					<li><a href="../symbols/net.user1.utils.CacheNode.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>utils<span class='break'> </span>.<span class='break'> </span>CacheNode</a></li>
+				
+					<li><a href="../symbols/net.user1.utils.EventUtil.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>utils<span class='break'> </span>.<span class='break'> </span>EventUtil</a></li>
+				
+					<li><a href="../symbols/net.user1.utils.integer.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>utils<span class='break'> </span>.<span class='break'> </span>integer</a></li>
+				
+					<li><a href="../symbols/net.user1.utils.LocalData.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>utils<span class='break'> </span>.<span class='break'> </span>LocalData</a></li>
+				
+					<li><a href="../symbols/net.user1.utils.LocalStorage.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>utils<span class='break'> </span>.<span class='break'> </span>LocalStorage</a></li>
+				
+					<li><a href="../symbols/net.user1.utils.LRUCache.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>utils<span class='break'> </span>.<span class='break'> </span>LRUCache</a></li>
+				
+					<li><a href="../symbols/net.user1.utils.MemoryStore.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>utils<span class='break'> </span>.<span class='break'> </span>MemoryStore</a></li>
+				
+					<li><a href="../symbols/net.user1.utils.NumericFormatter.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>utils<span class='break'> </span>.<span class='break'> </span>NumericFormatter</a></li>
+				
+					<li><a href="../symbols/net.user1.utils.ObjectUtil.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>utils<span class='break'> </span>.<span class='break'> </span>ObjectUtil</a></li>
+				
+					<li><a href="../symbols/net.user1.utils.UDictionary.html">net<span class='break'> </span>.<span class='break'> </span>user1<span class='break'> </span>.<span class='break'> </span>utils<span class='break'> </span>.<span class='break'> </span>UDictionary</a></li>
+				
+			</ul>
+		</nav>
+	</div>
+	<div class="fineprint" style="clear:both" align="center">
+		Copyright USER1 Subsystems Corporation<br /> 2016-3-9 21:32
+	</div>
+</div>
+
+<div class="index indexStatic"></div>
+
+<div class="content">
+	<div class="innerContent">
+		<h1 class="classTitle">
+			
+			Class <span>net.user1.orbiter.Client</span>
+		</h1>
+		
+		<div class="intro">
+				
+			
+				<ul class="summary">
+					
+					
+					
+						<!--<li>Defined in: <a href="../symbols/src/temp_working_Orbiter_2.1.2.19_Release.js.html">Orbiter_2.1.2.19_Release.js</a></li>-->
+					
+						<li>Extends <span class="fixedFont">
+						<a href="../symbols/net.user1.events.EventDispatcher.html">net.user1.events.EventDispatcher</a></span></li>
+					
+				</ul>
+			
+			
+			<p class="description summary">
+				The Client class dispatches the following events:
+
+<ul class="summary">
+  <li class="fixedFont"><a href="../symbols/net.user1.orbiter.ClientEvent.html#.JOIN_ROOM">net.user1.orbiter.ClientEvent.JOIN_ROOM</a></li> 
+  <li class="fixedFont"><a href="../symbols/net.user1.orbiter.ClientEvent.html#.LEAVE_ROOM">net.user1.orbiter.ClientEvent.LEAVE_ROOM</a></li> 
+  <li class="fixedFont"><a href="../symbols/net.user1.orbiter.ClientEvent.html#.OBSERVE_ROOM">net.user1.orbiter.ClientEvent.OBSERVE_ROOM</a></li> 
+  <li class="fixedFont"><a href="../symbols/net.user1.orbiter.ClientEvent.html#.STOP_OBSERVING_ROOM">net.user1.orbiter.ClientEvent.STOP_OBSERVING_ROOM</a></li> 
+  <li class="fixedFont"><a href="../symbols/net.user1.orbiter.ClientEvent.html#.OBSERVE">net.user1.orbiter.ClientEvent.OBSERVE</a></li> 
+  <li class="fixedFont"><a href="../symbols/net.user1.orbiter.ClientEvent.html#.STOP_OBSERVING">net.user1.orbiter.ClientEvent.STOP_OBSERVING</a></li> 
+  <li class="fixedFont"><a href="../symbols/net.user1.orbiter.ClientEvent.html#.OBSERVE_RESULT">net.user1.orbiter.ClientEvent.OBSERVE_RESULT</a></li> 
+  <li class="fixedFont"><a href="../symbols/net.user1.orbiter.ClientEvent.html#.STOP_OBSERVING_RESULT">net.user1.orbiter.ClientEvent.STOP_OBSERVING_RESULT</a></li> 
+  <li class="fixedFont"><a href="../symbols/net.user1.orbiter.AccountEvent.html#.LOGIN">net.user1.orbiter.AccountEvent.LOGIN</a></li>    
+  <li class="fixedFont"><a href="../symbols/net.user1.orbiter.AccountEvent.html#.LOGOFF">net.user1.orbiter.AccountEvent.LOGOFF</a></li>    
+  <li class="fixedFont"><a href="../symbols/net.user1.orbiter.ClientEvent.html#.SYNCHRONIZE">net.user1.orbiter.ClientEvent.SYNCHRONIZE</a></li> 
+  <li class="fixedFont"><a href="../symbols/net.user1.orbiter.AttributeEvent.html#.DELETE">net.user1.orbiter.AttributeEvent.DELETE</a></li> 
+  <li class="fixedFont"><a href="../symbols/net.user1.orbiter.AttributeEvent.html#.UPDATE">net.user1.orbiter.AttributeEvent.UPDATE</a></li> 
+  <li class="fixedFont"><a href="../symbols/net.user1.orbiter.AttributeEvent.html#.SET_RESULT">net.user1.orbiter.AttributeEvent.SET_RESULT</a></li> 
+  <li class="fixedFont"><a href="../symbols/net.user1.orbiter.AttributeEvent.html#.DELETE_RESULT">net.user1.orbiter.AttributeEvent.DELETE_RESULT</a></li> 
+</ul>
+
+To register for events, use <a href="../symbols/net.user1.events.EventDispatcher.html#addEventListener">net.user1.events.EventDispatcher#addEventListener</a>.
+			</p>
+		</div>
+		
+		
+			<div class="props">
+				<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class net.user1.orbiter.Client.">
+					<!--<caption class="sectionTitle">Class Summary</caption>-->
+					<caption class="sectionTitle">Constructor</caption>
+					<!--<thead>
+						<tr>
+							<th scope="col">Constructor Attributes</th>
+							<th scope="col">Constructor Name and Description</th>
+						</tr>
+					</thead>-->
+					<tbody>
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription" >
+								<div class="fixedFont">
+									<b><a href="../symbols/net.user1.orbiter.Client.html#constructor">net.user1.orbiter.Client</a></b>(clientID, clientManager, messageManager, roomManager, connectionManager, server, log)
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		
+		
+		
+<!--
+#### METHODS SUMMARY
+-->
+		
+			
+			
+			<div class="props">
+				<h2 class="sectionTitle">Methods</h2>
+				
+				
+					<table class="summaryTable" id="MethodsList" cellspacing="0" summary="A summary of the methods documented in the class net.user1.orbiter.Client.">
+<!--						<thead>
+							<tr>
+								<th scope="col">Method Attributes</th>
+								<th scope="col">Method Name and Description</th>
+							</tr>
+						</thead> -->
+						
+						<tbody>
+							
+							
+								<tr
+									 class='item0'
+								>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont"><b><a href="../symbols/net.user1.orbiter.Client.html#ban">ban</a></b>(duration, reason)
+										</div>
+										<div class="description"></div>
+									</td>
+								</tr>
+							
+								<tr
+									 class='item1'
+								>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont"><b><a href="../symbols/net.user1.orbiter.Client.html#deleteAttribute">deleteAttribute</a></b>(attrName, attrScope)
+										</div>
+										<div class="description"></div>
+									</td>
+								</tr>
+							
+								<tr
+									 class='item2'
+								>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont"><b><a href="../symbols/net.user1.orbiter.Client.html#dispose">dispose</a></b>()
+										</div>
+										<div class="description"></div>
+									</td>
+								</tr>
+							
+								<tr
+									 class='item3'
+								>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont"><b><a href="../symbols/net.user1.orbiter.Client.html#getAccount">getAccount</a></b>()
+										</div>
+										<div class="description"></div>
+									</td>
+								</tr>
+							
+								<tr
+									 class='item4'
+								>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont"><b><a href="../symbols/net.user1.orbiter.Client.html#getAttribute">getAttribute</a></b>(attrName, attrScope)
+										</div>
+										<div class="description"></div>
+									</td>
+								</tr>
+							
+								<tr
+									 class='item5'
+								>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont"><b><a href="../symbols/net.user1.orbiter.Client.html#getAttributes">getAttributes</a></b>()
+										</div>
+										<div class="description"></div>
+									</td>
+								</tr>
+							
+								<tr
+									 class='item6'
+								>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont"><b><a href="../symbols/net.user1.orbiter.Client.html#getAttributesByScope">getAttributesByScope</a></b>(scope)
+										</div>
+										<div class="description"></div>
+									</td>
+								</tr>
+							
+								<tr
+									 class='item7'
+								>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont"><b><a href="../symbols/net.user1.orbiter.Client.html#getClientID">getClientID</a></b>()
+										</div>
+										<div class="description"></div>
+									</td>
+								</tr>
+							
+								<tr
+									 class='item8'
+								>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont"><b><a href="../symbols/net.user1.orbiter.Client.html#getClientManager">getClientManager</a></b>()
+										</div>
+										<div class="description"></div>
+									</td>
+								</tr>
+							
+								<tr
+									 class='item9'
+								>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont"><b><a href="../symbols/net.user1.orbiter.Client.html#getConnectionState">getConnectionState</a></b>()
+										</div>
+										<div class="description"></div>
+									</td>
+								</tr>
+							
+								<tr
+									 class='item10'
+								>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont"><b><a href="../symbols/net.user1.orbiter.Client.html#getConnectTime">getConnectTime</a></b>()
+										</div>
+										<div class="description"></div>
+									</td>
+								</tr>
+							
+								<tr
+									 class='item11'
+								>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont"><b><a href="../symbols/net.user1.orbiter.Client.html#getIP">getIP</a></b>()
+										</div>
+										<div class="description"></div>
+									</td>
+								</tr>
+							
+								<tr
+									 class='item12'
+								>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont"><b><a href="../symbols/net.user1.orbiter.Client.html#getObservedRoomIDs">getObservedRoomIDs</a></b>()
+										</div>
+										<div class="description"></div>
+									</td>
+								</tr>
+							
+								<tr
+									 class='item13'
+								>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont"><b><a href="../symbols/net.user1.orbiter.Client.html#getOccupiedRoomIDs">getOccupiedRoomIDs</a></b>()
+										</div>
+										<div class="description"></div>
+									</td>
+								</tr>
+							
+								<tr
+									 class='item14'
+								>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont"><b><a href="../symbols/net.user1.orbiter.Client.html#getPing">getPing</a></b>()
+										</div>
+										<div class="description"></div>
+									</td>
+								</tr>
+							
+								<tr
+									 class='item15'
+								>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont"><b><a href="../symbols/net.user1.orbiter.Client.html#getTimeOnline">getTimeOnline</a></b>()
+										</div>
+										<div class="description"></div>
+									</td>
+								</tr>
+							
+								<tr
+									 class='item16'
+								>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont"><b><a href="../symbols/net.user1.orbiter.Client.html#getUpdateLevels">getUpdateLevels</a></b>(roomID)
+										</div>
+										<div class="description"></div>
+									</td>
+								</tr>
+							
+								<tr
+									 class='item17'
+								>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont"><b><a href="../symbols/net.user1.orbiter.Client.html#isAdmin">isAdmin</a></b>()
+										</div>
+										<div class="description"></div>
+									</td>
+								</tr>
+							
+								<tr
+									 class='item18'
+								>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont"><b><a href="../symbols/net.user1.orbiter.Client.html#isInRoom">isInRoom</a></b>(roomID)
+										</div>
+										<div class="description"></div>
+									</td>
+								</tr>
+							
+								<tr
+									 class='item19'
+								>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont"><b><a href="../symbols/net.user1.orbiter.Client.html#isObservingRoom">isObservingRoom</a></b>(roomID)
+										</div>
+										<div class="description"></div>
+									</td>
+								</tr>
+							
+								<tr
+									 class='item20'
+								>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont"><b><a href="../symbols/net.user1.orbiter.Client.html#isSelf">isSelf</a></b>()
+										</div>
+										<div class="description"></div>
+									</td>
+								</tr>
+							
+								<tr
+									 class='item21'
+								>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont"><b><a href="../symbols/net.user1.orbiter.Client.html#kick">kick</a></b>()
+										</div>
+										<div class="description"></div>
+									</td>
+								</tr>
+							
+								<tr
+									 class='item22'
+								>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont"><b><a href="../symbols/net.user1.orbiter.Client.html#observe">observe</a></b>()
+										</div>
+										<div class="description"></div>
+									</td>
+								</tr>
+							
+								<tr
+									 class='item23'
+								>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont"><b><a href="../symbols/net.user1.orbiter.Client.html#sendMessage">sendMessage</a></b>(messageName)
+										</div>
+										<div class="description"></div>
+									</td>
+								</tr>
+							
+								<tr
+									 class='item24'
+								>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont"><b><a href="../symbols/net.user1.orbiter.Client.html#setAttribute">setAttribute</a></b>(attrName, attrValue, attrScope, isShared, evaluate)
+										</div>
+										<div class="description"></div>
+									</td>
+								</tr>
+							
+								<tr
+									 class='item25'
+								>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont"><b><a href="../symbols/net.user1.orbiter.Client.html#setClientClass">setClientClass</a></b>(scope, clientClass)
+										</div>
+										<div class="description"></div>
+									</td>
+								</tr>
+							
+								<tr
+									 class='item26'
+								>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont"><b><a href="../symbols/net.user1.orbiter.Client.html#setConnectionState">setConnectionState</a></b>(newState)
+										</div>
+										<div class="description"></div>
+									</td>
+								</tr>
+							
+								<tr
+									 class='item27'
+								>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont"><b><a href="../symbols/net.user1.orbiter.Client.html#stopObserving">stopObserving</a></b>()
+										</div>
+										<div class="description"></div>
+									</td>
+								</tr>
+							
+								<tr
+									 class='item28'
+								>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont"><b><a href="../symbols/net.user1.orbiter.Client.html#toString">toString</a></b>()
+										</div>
+										<div class="description"></div>
+									</td>
+								</tr>
+							
+						</tbody>
+					</table>
+				
+			
+				
+					<dl class="inheritsList" id="MethodsListInherited">
+					<dt><b>Inherited Methods</b></dt>
+					<dt>from <span class='fixedFont'><b><a href="../symbols/net.user1.events.EventDispatcher.html">net.user1.events.EventDispatcher</a></b></span>: </dt><dd><span class='fixedFont'><b><a href="../symbols/net.user1.events.EventDispatcher.html#addEventListener">addEventListener</a>()</b></span></dd> <dd><span class='fixedFont'><b><a href="../symbols/net.user1.events.EventDispatcher.html#dispatchEvent">dispatchEvent</a>()</b></span></dd> <dd><span class='fixedFont'><b><a href="../symbols/net.user1.events.EventDispatcher.html#getListeners">getListeners</a>()</b></span></dd> <dd><span class='fixedFont'><b><a href="../symbols/net.user1.events.EventDispatcher.html#hasListener">hasListener</a>()</b></span></dd> <dd><span class='fixedFont'><b><a href="../symbols/net.user1.events.EventDispatcher.html#removeEventListener">removeEventListener</a>()</b></span></dd>
+					</dl>
+				
+			</div>
+		
+		
+<!--
+#### EVENTS SUMMARY
+-->
+		
+<!--
+#### CONSTRUCTOR DETAILS
+-->
+<!--
+
+			<div class="details props">
+				<div class="innerProps">
+					<h2 class="sectionTitle" id="constructor">
+						Class Detail
+					</h2>
+					
+					<div class="fixedFont">
+						<b>net.user1.orbiter.Client</b>(clientID, clientManager, messageManager, roomManager, connectionManager, server, log)
+					</div>
+					
+					<div class="description">
+						
+						
+					</div>
+					
+					
+				
+					
+						<dl class="detailList params">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									 <b>clientID</b>
+									
+								</dt>
+								<dd></dd>
+							
+								<dt>
+									 <b>clientManager</b>
+									
+								</dt>
+								<dd></dd>
+							
+								<dt>
+									 <b>messageManager</b>
+									
+								</dt>
+								<dd></dd>
+							
+								<dt>
+									 <b>roomManager</b>
+									
+								</dt>
+								<dd></dd>
+							
+								<dt>
+									 <b>connectionManager</b>
+									
+								</dt>
+								<dd></dd>
+							
+								<dt>
+									 <b>server</b>
+									
+								</dt>
+								<dd></dd>
+							
+								<dt>
+									 <b>log</b>
+									
+								</dt>
+								<dd></dd>
+							
+						</dl>
+					
+					
+					
+				</div>
+			</div>
+		
+-->
+<!--
+#### FIELD DETAILS
+-->
+<!--
+		
+-->		
+<!--
+#### METHOD DETAILS
+-->		
+<!--
+		
+			<div class="details props">
+				<div class="innerProps">
+					<h2 class="sectionTitle">
+						Method Detail
+					</h2>
+					
+					<ul class="methodDetail" id="MethodDetail">
+						
+						
+							<li 
+								 class='item0'
+							>
+								<div class="fixedFont heading" id="ban">
+									<span class='lighter'>
+									
+									</span>
+									
+									
+									
+									<b>ban</b>(duration, reason)
+								</div>
+								
+								<div class="description">
+									
+									
+									
+									
+									
+								</div>
+								
+								
+								
+								
+									<dl class="detailList params">
+										<dt class="heading">Parameters:</dt>
+										
+											<dt>
+												<b>duration</b>
+												
+											</dt>
+											<dd></dd>
+										
+											<dt>
+												<b>reason</b>
+												
+											</dt>
+											<dd></dd>
+										
+									</dl>
+								
+								
+								
+								<div class="hr"></div>
+							</li>
+						
+							<li 
+								 class='item1'
+							>
+								<div class="fixedFont heading" id="deleteAttribute">
+									<span class='lighter'>
+									
+									</span>
+									
+									
+									
+									<b>deleteAttribute</b>(attrName, attrScope)
+								</div>
+								
+								<div class="description">
+									
+									
+									
+									
+									
+								</div>
+								
+								
+								
+								
+									<dl class="detailList params">
+										<dt class="heading">Parameters:</dt>
+										
+											<dt>
+												<b>attrName</b>
+												
+											</dt>
+											<dd></dd>
+										
+											<dt>
+												<b>attrScope</b>
+												
+											</dt>
+											<dd></dd>
+										
+									</dl>
+								
+								
+								
+								<div class="hr"></div>
+							</li>
+						
+							<li 
+								 class='item2'
+							>
+								<div class="fixedFont heading" id="dispose">
+									<span class='lighter'>
+									
+									</span>
+									
+									
+									
+									<b>dispose</b>()
+								</div>
+								
+								<div class="description">
+									
+									
+									
+									
+									
+								</div>
+								
+								
+								
+								
+								
+								
+								<div class="hr"></div>
+							</li>
+						
+							<li 
+								 class='item3'
+							>
+								<div class="fixedFont heading" id="getAccount">
+									<span class='lighter'>
+									
+									</span>
+									
+									
+									
+									<b>getAccount</b>()
+								</div>
+								
+								<div class="description">
+									
+									
+									
+									
+									
+								</div>
+								
+								
+								
+								
+								
+								
+								<div class="hr"></div>
+							</li>
+						
+							<li 
+								 class='item4'
+							>
+								<div class="fixedFont heading" id="getAttribute">
+									<span class='lighter'>
+									
+									</span>
+									
+									
+									
+									<b>getAttribute</b>(attrName, attrScope)
+								</div>
+								
+								<div class="description">
+									
+									
+									
+									
+									
+								</div>
+								
+								
+								
+								
+									<dl class="detailList params">
+										<dt class="heading">Parameters:</dt>
+										
+											<dt>
+												<b>attrName</b>
+												
+											</dt>
+											<dd></dd>
+										
+											<dt>
+												<b>attrScope</b>
+												
+											</dt>
+											<dd></dd>
+										
+									</dl>
+								
+								
+								
+								<div class="hr"></div>
+							</li>
+						
+							<li 
+								 class='item5'
+							>
+								<div class="fixedFont heading" id="getAttributes">
+									<span class='lighter'>
+									
+									</span>
+									
+									
+									
+									<b>getAttributes</b>()
+								</div>
+								
+								<div class="description">
+									
+									
+									
+									
+									
+								</div>
+								
+								
+								
+								
+								
+								
+								<div class="hr"></div>
+							</li>
+						
+							<li 
+								 class='item6'
+							>
+								<div class="fixedFont heading" id="getAttributesByScope">
+									<span class='lighter'>
+									
+									</span>
+									
+									
+									
+									<b>getAttributesByScope</b>(scope)
+								</div>
+								
+								<div class="description">
+									
+									
+									
+									
+									
+								</div>
+								
+								
+								
+								
+									<dl class="detailList params">
+										<dt class="heading">Parameters:</dt>
+										
+											<dt>
+												<b>scope</b>
+												
+											</dt>
+											<dd></dd>
+										
+									</dl>
+								
+								
+								
+								<div class="hr"></div>
+							</li>
+						
+							<li 
+								 class='item7'
+							>
+								<div class="fixedFont heading" id="getClientID">
+									<span class='lighter'>
+									
+									</span>
+									
+									
+									
+									<b>getClientID</b>()
+								</div>
+								
+								<div class="description">
+									
+									
+									
+									
+									
+								</div>
+								
+								
+								
+								
+								
+								
+								<div class="hr"></div>
+							</li>
+						
+							<li 
+								 class='item8'
+							>
+								<div class="fixedFont heading" id="getClientManager">
+									<span class='lighter'>
+									
+									</span>
+									
+									
+									
+									<b>getClientManager</b>()
+								</div>
+								
+								<div class="description">
+									
+									
+									
+									
+									
+								</div>
+								
+								
+								
+								
+								
+								
+								<div class="hr"></div>
+							</li>
+						
+							<li 
+								 class='item9'
+							>
+								<div class="fixedFont heading" id="getConnectionState">
+									<span class='lighter'>
+									
+									</span>
+									
+									
+									
+									<b>getConnectionState</b>()
+								</div>
+								
+								<div class="description">
+									
+									
+									
+									
+									
+								</div>
+								
+								
+								
+								
+								
+								
+								<div class="hr"></div>
+							</li>
+						
+							<li 
+								 class='item10'
+							>
+								<div class="fixedFont heading" id="getConnectTime">
+									<span class='lighter'>
+									
+									</span>
+									
+									
+									
+									<b>getConnectTime</b>()
+								</div>
+								
+								<div class="description">
+									
+									
+									
+									
+									
+								</div>
+								
+								
+								
+								
+								
+								
+								<div class="hr"></div>
+							</li>
+						
+							<li 
+								 class='item11'
+							>
+								<div class="fixedFont heading" id="getIP">
+									<span class='lighter'>
+									
+									</span>
+									
+									
+									
+									<b>getIP</b>()
+								</div>
+								
+								<div class="description">
+									
+									
+									
+									
+									
+								</div>
+								
+								
+								
+								
+								
+								
+								<div class="hr"></div>
+							</li>
+						
+							<li 
+								 class='item12'
+							>
+								<div class="fixedFont heading" id="getObservedRoomIDs">
+									<span class='lighter'>
+									
+									</span>
+									
+									
+									
+									<b>getObservedRoomIDs</b>()
+								</div>
+								
+								<div class="description">
+									
+									
+									
+									
+									
+								</div>
+								
+								
+								
+								
+								
+								
+								<div class="hr"></div>
+							</li>
+						
+							<li 
+								 class='item13'
+							>
+								<div class="fixedFont heading" id="getOccupiedRoomIDs">
+									<span class='lighter'>
+									
+									</span>
+									
+									
+									
+									<b>getOccupiedRoomIDs</b>()
+								</div>
+								
+								<div class="description">
+									
+									
+									
+									
+									
+								</div>
+								
+								
+								
+								
+								
+								
+								<div class="hr"></div>
+							</li>
+						
+							<li 
+								 class='item14'
+							>
+								<div class="fixedFont heading" id="getPing">
+									<span class='lighter'>
+									
+									</span>
+									
+									
+									
+									<b>getPing</b>()
+								</div>
+								
+								<div class="description">
+									
+									
+									
+									
+									
+								</div>
+								
+								
+								
+								
+								
+								
+								<div class="hr"></div>
+							</li>
+						
+							<li 
+								 class='item15'
+							>
+								<div class="fixedFont heading" id="getTimeOnline">
+									<span class='lighter'>
+									
+									</span>
+									
+									
+									
+									<b>getTimeOnline</b>()
+								</div>
+								
+								<div class="description">
+									
+									
+									
+									
+									
+								</div>
+								
+								
+								
+								
+								
+								
+								<div class="hr"></div>
+							</li>
+						
+							<li 
+								 class='item16'
+							>
+								<div class="fixedFont heading" id="getUpdateLevels">
+									<span class='lighter'>
+									
+									</span>
+									
+									
+									
+									<b>getUpdateLevels</b>(roomID)
+								</div>
+								
+								<div class="description">
+									
+									
+									
+									
+									
+								</div>
+								
+								
+								
+								
+									<dl class="detailList params">
+										<dt class="heading">Parameters:</dt>
+										
+											<dt>
+												<b>roomID</b>
+												
+											</dt>
+											<dd></dd>
+										
+									</dl>
+								
+								
+								
+								<div class="hr"></div>
+							</li>
+						
+							<li 
+								 class='item17'
+							>
+								<div class="fixedFont heading" id="isAdmin">
+									<span class='lighter'>
+									
+									</span>
+									
+									
+									
+									<b>isAdmin</b>()
+								</div>
+								
+								<div class="description">
+									
+									
+									
+									
+									
+								</div>
+								
+								
+								
+								
+								
+								
+								<div class="hr"></div>
+							</li>
+						
+							<li 
+								 class='item18'
+							>
+								<div class="fixedFont heading" id="isInRoom">
+									<span class='lighter'>
+									
+									</span>
+									
+									
+									
+									<b>isInRoom</b>(roomID)
+								</div>
+								
+								<div class="description">
+									
+									
+									
+									
+									
+								</div>
+								
+								
+								
+								
+									<dl class="detailList params">
+										<dt class="heading">Parameters:</dt>
+										
+											<dt>
+												<b>roomID</b>
+												
+											</dt>
+											<dd></dd>
+										
+									</dl>
+								
+								
+								
+								<div class="hr"></div>
+							</li>
+						
+							<li 
+								 class='item19'
+							>
+								<div class="fixedFont heading" id="isObservingRoom">
+									<span class='lighter'>
+									
+									</span>
+									
+									
+									
+									<b>isObservingRoom</b>(roomID)
+								</div>
+								
+								<div class="description">
+									
+									
+									
+									
+									
+								</div>
+								
+								
+								
+								
+									<dl class="detailList params">
+										<dt class="heading">Parameters:</dt>
+										
+											<dt>
+												<b>roomID</b>
+												
+											</dt>
+											<dd></dd>
+										
+									</dl>
+								
+								
+								
+								<div class="hr"></div>
+							</li>
+						
+							<li 
+								 class='item20'
+							>
+								<div class="fixedFont heading" id="isSelf">
+									<span class='lighter'>
+									
+									</span>
+									
+									
+									
+									<b>isSelf</b>()
+								</div>
+								
+								<div class="description">
+									
+									
+									
+									
+									
+								</div>
+								
+								
+								
+								
+								
+								
+								<div class="hr"></div>
+							</li>
+						
+							<li 
+								 class='item21'
+							>
+								<div class="fixedFont heading" id="kick">
+									<span class='lighter'>
+									
+									</span>
+									
+									
+									
+									<b>kick</b>()
+								</div>
+								
+								<div class="description">
+									
+									
+									
+									
+									
+								</div>
+								
+								
+								
+								
+								
+								
+								<div class="hr"></div>
+							</li>
+						
+							<li 
+								 class='item22'
+							>
+								<div class="fixedFont heading" id="observe">
+									<span class='lighter'>
+									
+									</span>
+									
+									
+									
+									<b>observe</b>()
+								</div>
+								
+								<div class="description">
+									
+									
+									
+									
+									
+								</div>
+								
+								
+								
+								
+								
+								
+								<div class="hr"></div>
+							</li>
+						
+							<li 
+								 class='item23'
+							>
+								<div class="fixedFont heading" id="sendMessage">
+									<span class='lighter'>
+									
+									</span>
+									
+									
+									
+									<b>sendMessage</b>(messageName)
+								</div>
+								
+								<div class="description">
+									
+									
+									
+									
+									
+								</div>
+								
+								
+								
+								
+									<dl class="detailList params">
+										<dt class="heading">Parameters:</dt>
+										
+											<dt>
+												<b>messageName</b>
+												
+											</dt>
+											<dd></dd>
+										
+									</dl>
+								
+								
+								
+								<div class="hr"></div>
+							</li>
+						
+							<li 
+								 class='item24'
+							>
+								<div class="fixedFont heading" id="setAttribute">
+									<span class='lighter'>
+									
+									</span>
+									
+									
+									
+									<b>setAttribute</b>(attrName, attrValue, attrScope, isShared, evaluate)
+								</div>
+								
+								<div class="description">
+									
+									
+									
+									
+									
+								</div>
+								
+								
+								
+								
+									<dl class="detailList params">
+										<dt class="heading">Parameters:</dt>
+										
+											<dt>
+												<b>attrName</b>
+												
+											</dt>
+											<dd></dd>
+										
+											<dt>
+												<b>attrValue</b>
+												
+											</dt>
+											<dd></dd>
+										
+											<dt>
+												<b>attrScope</b>
+												
+											</dt>
+											<dd></dd>
+										
+											<dt>
+												<b>isShared</b>
+												
+											</dt>
+											<dd></dd>
+										
+											<dt>
+												<b>evaluate</b>
+												
+											</dt>
+											<dd></dd>
+										
+									</dl>
+								
+								
+								
+								<div class="hr"></div>
+							</li>
+						
+							<li 
+								 class='item25'
+							>
+								<div class="fixedFont heading" id="setClientClass">
+									<span class='lighter'>
+									
+									</span>
+									
+									
+									
+									<b>setClientClass</b>(scope, clientClass)
+								</div>
+								
+								<div class="description">
+									
+									
+									
+									
+									
+								</div>
+								
+								
+								
+								
+									<dl class="detailList params">
+										<dt class="heading">Parameters:</dt>
+										
+											<dt>
+												<b>scope</b>
+												
+											</dt>
+											<dd></dd>
+										
+											<dt>
+												<b>clientClass</b>
+												
+											</dt>
+											<dd></dd>
+										
+									</dl>
+								
+								
+								
+								<div class="hr"></div>
+							</li>
+						
+							<li 
+								 class='item26'
+							>
+								<div class="fixedFont heading" id="setConnectionState">
+									<span class='lighter'>
+									
+									</span>
+									
+									
+									
+									<b>setConnectionState</b>(newState)
+								</div>
+								
+								<div class="description">
+									
+									
+									
+									
+									
+								</div>
+								
+								
+								
+								
+									<dl class="detailList params">
+										<dt class="heading">Parameters:</dt>
+										
+											<dt>
+												<b>newState</b>
+												
+											</dt>
+											<dd></dd>
+										
+									</dl>
+								
+								
+								
+								<div class="hr"></div>
+							</li>
+						
+							<li 
+								 class='item27'
+							>
+								<div class="fixedFont heading" id="stopObserving">
+									<span class='lighter'>
+									
+									</span>
+									
+									
+									
+									<b>stopObserving</b>()
+								</div>
+								
+								<div class="description">
+									
+									
+									
+									
+									
+								</div>
+								
+								
+								
+								
+								
+								
+								<div class="hr"></div>
+							</li>
+						
+							<li 
+								 class='item28'
+							>
+								<div class="fixedFont heading" id="toString">
+									<span class='lighter'>
+									
+									</span>
+									
+									
+									
+									<b>toString</b>()
+								</div>
+								
+								<div class="description">
+									
+									
+									
+									
+									
+								</div>
+								
+								
+								
+								
+								
+								
+								
+							</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+-->		
+		
+<!--
+#### EVENT DETAILS
+-->		
+<!--
+		
+		-->
+	</div>
+</div>
+		<script type="text/javascript">
+			wbos.CssTools.MediaQueryFallBack.LoadCss('../css/screen.css', '../css/handheld.css', 660)
+			codeview.classFilter.Init()
+		</script>
+	</body>
+</html>
+

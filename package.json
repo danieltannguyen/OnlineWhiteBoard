@@ -4,26 +4,22 @@
   "description": "OnlineWhiteBoard is a web app that helps users to collaborate their work on a whiteboard online in real time. The users can pick any color they want and the size of the color. This site includes useful features such as sharing whiteboard with someone else through a link and doing video calls while editing whiteboard. In addtion, this site also provide entertainments such as playing video game and watching animaitons.",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.14.1",
-    "socket.io": "^1.7.2"
-  },
-  "dependencies": {
-    "express" : "~4.0.0",           
-    "ejs" : "~0.8.5", 
-    "mongoose" : "~3.8.1",          
-    "passport" : "~0.1.17",         
-    "passport-local" : "~0.1.6",    
-    "passport-facebook" : "~1.0.2", 
-    "passport-twitter" : "~1.0.2",  
-    "passport-google-oauth" : "~0.1.5",
-    "connect-flash" : "~0.1.1",     
-    "bcrypt-nodejs" : "latest",
-
-    "morgan": "~1.0.0",
+    "bcrypt-nodejs": "latest",
     "body-parser": "~1.0.0",
+    "connect-flash": "~0.1.1",
     "cookie-parser": "~1.0.0",
+    "ejs": "~0.8.5",
+    "ejs-locals": "^1.0.2",
+    "express": "~4.0.0",
+    "express-session": "~1.0.0",
     "method-override": "~1.0.0",
-    "express-session": "~1.0.0"
+    "mongoose": "~3.8.1",
+    "morgan": "~1.0.0",
+    "passport": "~0.1.17",
+    "passport-facebook": "~1.0.2",
+    "passport-google-oauth": "~0.1.5",
+    "passport-local": "~0.1.6",
+    "passport-twitter": "~1.0.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -40,5 +36,3 @@
   },
   "homepage": "https://github.com/codeskiller/OnlineWhiteBoard#readme"
 }
-
-

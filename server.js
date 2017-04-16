@@ -2,7 +2,7 @@ var express =require('express');
 var app = express();
 
 //set port
-var port = process.env.PORT || 4000;
+var port = process.env.PORT || 5000;
 (function() {
   var io;
   io = require('socket.io').listen(4000);
@@ -24,5 +24,5 @@ app.get("/", function (req,res) {
 });
 
 app.listen(port, function() {
-  console.log("app is running on port 4000!")
+  console.log("app is running on port 5000!")
 })

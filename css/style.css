@@ -8,6 +8,27 @@
 #homePage {
     background: url(/picture/background.jpg);
 }
+#navbar {
+    height: 30px;
+    position: fixed;
+    width: 100%;
+    top:0
+}
+#myCarousel{
+  left: 50%; 
+  width:70%; 
+  height: 70%;
+  margin-top: 50%;
+  margin-left: -35%;
+}
+@media(min-height: 768px){
+  #myCarousel{
+    margin-top: 20%;
+    margin-left: -35%;
+  }
+
+}
+
 #xmasPage {
      background: url(/picture/snowfall.gif);
 }
@@ -129,7 +150,7 @@
 .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
       width: 70%;
-      margin: auto;
+      margin: 30px auto;
 }
 
 .footer-center2 {

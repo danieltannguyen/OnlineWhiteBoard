@@ -10,7 +10,7 @@
 	<script src="/src/excanvas.js"></script>
 	<![endif]-->
 
-	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/css/whiteboard-style.css">
 	<link rel="stylesheet" type="text/css" href="/css/font-awesome.css">
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -27,7 +27,6 @@
 </head>
 <body>
 	
-
 	<!--Drop down menus for selecting line thickness and color-->
 	<div class="container">
 		
@@ -39,18 +38,44 @@
 			  <!--A status text field, for displaying connection information-->
  			 <p id="status"></p>
  		</div>
- 		
+ 			<!--inital input-->
+		<input type="text" value="whiteboard" id="RoomID" value="1" style="display:none;">
+
+		<!--Join button-->
+		<button class="btn btn-success Join" onclick="join()">Join</button>
+			<form id="formJoin">
+				<fieldset id="join" style="max-width:200px; left:80px;position:absolute; display:none;">
+			    <legend>Enter Room ID</legend>
+			    <input id="roomID" type="text" size="12" value=""  style="border: ridge 5px;" /> 
+			    <a href="#" onClick="roomSelectListener('roomID')" type="submit">Join</a>
+				</fieldset>
+			</form>
+			
+
+		<!--Share button-->
+		<button class="btn btn-success Share" onclick="share()">Share</button>
+			<fieldset id="share" style="max-width:200px; left:80px;position:absolute; display:none">
+			    <legend>Share this room ID</legend>
+			    <input id="roomId" type="text" size="12" value="id" style="border: ridge 5px;"/> 
+			<!--value will be replaced with a ramdom value-->
+			    <a href="#" onClick="copyfieldvalue(event, 'roomId');return false">Copy</a>
+				<a id="answer"></a>
+			</fieldset>
+
+		<!--color bar-->
 		<div class="col">
 			<div class="submenu col-8" id="color">
 				
 				<div class="menu-item">
-					<button type="button"  style="font-size:11px;" onclick="toggle();">Menu</button>
+					<button type="button"  style="background-color: #fff; font-size:11px;" onclick="toggle();">Menu</button>
 				</div>
 				<div class="menu-item">
 					<div id="black" onclick="colorSelectListener('#000000')" class="color-icon" style="background: #000000;"></div>
 				</div>
 				<div class="menu-item">
+				<a>
 					<div id="red" onclick="colorSelectListener('#F34336')" class="color-icon" style="background: #F34336;"></div>
+					</a>
 				</div>
 				<div class="menu-item">
 					<div id="green" onclick="colorSelectListener('#4CAF50')" class="color-icon" style="background: #4CAF50;"></div>
@@ -75,10 +100,11 @@
 		<div class="col">
 			<div id="tools" style="display: none; " class="col-collapse" >
 				<!--clean button-->
-				<button onclick="clearCanvas()">Clear&nbsp;</button>
+				<button onclick="clearCanvas()"><u>Clear</u>&nbsp;</button>
+				<span> | </span>
 				<!--eraser button-->
 				<i class="fa fa-eraser" aria-hidden="true" onclick="colorSelectListener('#ffffff')">&nbsp;</i>
-
+				<span> | </span>
 				Size:
 				<select id="thickness">
 					<option value="1">1</option>
@@ -92,28 +118,11 @@
 			</div>	
 		</div>
 	</div>
-	<!--inital input-->
-	<input type="text" value="whiteboard" id="RoomID" value="1" style="display:none;">
 
-	<!--Join button-->
-	<button class="btn btn-success Join" onclick="join()" style="left:10px;position:absolute;">Join</button>
-		<form id="formJoin">
-			<fieldset id="join" style="max-width:200px; left:80px;position:absolute; display:none;">
-		    <legend>Enter Room ID</legend>
-		    <input id="roomID" type="text" size="12" value="" /> 
-		    <a href="#" onClick="roomSelectListener('roomID')" type="submit">Join</a>
-			</fieldset>
-		</form>
+	<footer class="blank-footer" style="height: 100px; bottom: 0; width: 100%">
 		
+	</footer>
 
-	<!--Share button-->
-	<button class="btn btn-success Share" onclick="share()" style="left:10px;top:40px;position:absolute;">Share</button>
-		<fieldset id="share" style="max-width:200px; left:80px;position:absolute; display:none">
-		    <legend>Share this room ID</legend>
-		    <input id="roomId" type="text" size="12" value="id" /> <!--value will be replaced with a ramdom value-->
-		    <a href="#" onClick="copyfieldvalue(event, 'roomId');return false">Copy</a>
-			<a id="answer"></a>
-		</fieldset>
 
 	<!-- menu button trigger-->
 	<script type="text/javascript">
@@ -128,6 +137,11 @@
   		document.getElementById('RoomID').value = Math.random().toString(36).substring(2,7);
 
   		function join(){
+  			//close share form
+  			var share = document.getElementById('share');
+  			share.style.display = 'none';
+
+  			//create inputform
   			var inputform = document.getElementById('join');
   			if(inputform.style.display === 'block' || inputform.style.display === ''){
 				inputform.style.display = 'none'
@@ -139,10 +153,14 @@
 
 
 		function share() {
+			//close join form
+			var inputform = document.getElementById('join');
+			inputform.style.display = 'none';
 
+			//display share info
 		  	var share = document.getElementById('share');
   			if(share.style.display === 'block' || share.style.display === ''){
-				share.style.display = 'none'
+				share.style.display = 'none';
 			}
 			else {
 				share.style.display = 'block';

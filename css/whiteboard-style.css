@@ -53,23 +53,6 @@
   margin: 0 auto;
   bottom: 10px;
   left: 40%;
-
-}
-
-.carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-      width: 70%;
-      margin: 30px auto;
-}
-
-.footer-center2 {
-    
-    border-top: solid;
-    border-color: white;
-    color: blue;
-}
-#homePage footer {
-  background: url('/picture/footer.jpg');
 }
 
 .submenu {

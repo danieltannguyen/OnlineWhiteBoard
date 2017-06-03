@@ -44,7 +44,7 @@
 		<!--Join button-->
 		<button class="btn btn-success Join" onclick="join()">Join</button>
 			<form id="formJoin">
-				<fieldset id="join" style="max-width:200px; left:80px;position:absolute; display:none;">
+				<fieldset id="join">
 			    <legend>Enter Room ID</legend>
 			    <input id="roomID" type="text" size="12" value=""  style="border: ridge 5px;" /> 
 			    <a href="#" onClick="roomSelectListener('roomID')" type="submit">Join</a>
@@ -54,7 +54,7 @@
 
 		<!--Share button-->
 		<button class="btn btn-success Share" onclick="share()">Share</button>
-			<fieldset id="share" style="max-width:200px; left:80px;position:absolute; display:none">
+			<fieldset id="share">
 			    <legend>Share this room ID</legend>
 			    <input id="roomId" type="text" size="12" value="id" style="border: ridge 5px;"/> 
 			<!--value will be replaced with a ramdom value-->

@@ -23,10 +23,43 @@
 	top:10px;
 	position:relative;
 }
+#join {
+	top: 10px;
+	max-width:200px; 
+	left: 200px;
+	position:absolute; 
+	display:none;
+}
+#share {
+	top: 10px;
+	max-width:200px; 
+	left: 200px;
+	position:absolute; 
+	display:none;
+}
 .Share {	
 	top:20px;
 	position:relative;
 }
+
+@media screen and (max-width: 414px){
+	#join {
+		top: 10px;
+		max-width:200px; 
+		left: 100px;
+		position:absolute; 
+		display:none;
+	}
+	#share {
+		top: 10px;
+		max-width:200px; 
+		left: 100px;
+		position:absolute; 
+		display:none;
+	}
+}
+
+
 #tools {
   background-color: #AAAAAA;
   left: 55px;

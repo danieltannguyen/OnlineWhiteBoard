@@ -21,6 +21,36 @@
   cursor: url('/picture/cursor.cur');
 
 }
+header div {
+  float: left;
+}
+.bubble {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+.bubble {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+    min-width: 48px;
+    height: 48px;
+    padding: .3em;
+    display: inline-block;
+    border-radius: 8px;
+    line-height: .9em;
+    color: #fff;
+    text-align: center;
+    background: #0142a3;
+}
+.bubble span {
+    display: block;
+    margin: 5px auto;
+    font-size: 10px;
+}
+.bubble #occupancy {
+    font-size: 32px;
+}
+
 
 .Join {
 	top:10px;

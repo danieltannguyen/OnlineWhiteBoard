@@ -21,19 +21,27 @@
 	<!-- Latest compiled JavaScript -->
 	<script src="/js/bootstrap.min.js"></script>
 
-	<!--Load the OrbiterMicro JavaScript library (non-minified version). Use during development.-->
-	<script type="text/javascript" src="/orbiter/Orbiter_2.1.2.19_Release.js"></script>
+	<!--Load the OrbiterMicro JavaScript library (non-minified version). Use during development.
+	<script type="text/javascript" src="/orbiter/Orbiter_2.1.2.19_Release.js"></script>-->
 
 </head>
 <body>
+	<!--The canvas where drawings will be displayed-->
+	<div class="row">    	
+		<canvas id="canvas"></canvas>
+	</div>
+
+	<header>
+		<div class="bubble">
+			<span id="occupancy">0</span>
+			<span id="unit">User</span>
+		</div>
+	</header>
 	
 	<!--Drop down menus for selecting line thickness and color-->
 
 		
-		<!--The canvas where drawings will be displayed-->
-		<div class="row">    	
-			<canvas id="canvas"></canvas>
-		</div>
+		
 		<div class="status">
 			  <!--A status text field, for displaying connection information-->
  			 <p id="status"></p>
@@ -47,7 +55,7 @@
 				<fieldset id="join">
 			    <legend>Enter Room ID</legend>
 			    <input id="roomID" type="text" size="12" value=""  style="border: ridge 5px;" /> 
-			    <a href="#" onClick="roomSelectListener('roomID')" type="submit">Join</a>
+			    <a onClick="roomSelectListener('roomID')" type="submit">Join</a>
 				</fieldset>
 			</form>
 			
@@ -67,6 +75,7 @@
 			<div class="submenu" id="color">
 				
 				<div class="menu-item">
+			
 					<button type="button"  style="background-color: #fff; font-size:11px;" onclick="toggle();">Menu</button>
 				</div>
 				<div class="menu-item">
@@ -131,7 +140,7 @@
 	  		if (mydiv.style.display === 'block' || mydiv.style.display === '')
 	    		mydiv.style.display = 'none';
 	  		else
-	   		 mydiv.style.display = 'block'
+	   		 mydiv.style.display = 'block';
   		}
   	
   		document.getElementById('RoomID').value = Math.random().toString(36).substring(2,7);
@@ -141,10 +150,10 @@
   			var share = document.getElementById('share');
   			share.style.display = 'none';
 
-  			//create inputform
+  			//display inputform
   			var inputform = document.getElementById('join');
   			if(inputform.style.display === 'block' || inputform.style.display === ''){
-				inputform.style.display = 'none'
+				inputform.style.display = 'none';
 			}
 			else {
 				inputform.style.display = 'block';
@@ -187,7 +196,12 @@
 		}
 
 	</script>
+	<script>
+		// For history() demo, please view history.html.
+		var drawHistory = false;
+	</script>
+	<script src="//cdn.pubnub.com/pubnub-3.14.1.min.js"></script>
 		<!--Load UnionDraw application code-->
-	<script src="/src/board.js"></script>
+	<script src="/src/app.js"></script>
 </body>
 </html>

@@ -2,12 +2,104 @@
 <html>
 <head>
 	<title>Game</title>
-	
+	<meta charset="utf-8">
+	<!--Prevents iPhone, iPad, and touch devices from scrolling or zooming when touched-->
+	<meta name="viewport" content="width=device-width, inital-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/css/font-awesome.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="/js/bootstrap.min.js"></script>
+		
 </head>
+<style type="text/css">
+	body {
+		background-color: gray;
+	}
+	#gameframe {
+		top: 100px;
+		left: 50%;
+		margin: 0 auto;
+		position: fixed;
+		text-align: center;
+
+	}
+	@media screen and (min-width: 1024px){
+		#gameframe {
+			top: 100px;
+			left: 30%;
+		}
+	}
+	.row{
+		max-width: 100%;
+	}
+
+</style>
 <body>
-<div style="text-align:center">
-	<iframe src="https://cloudgames.com/games/html5/doodle-jump-new-en-s-iga-cloud/index.html?pub=10" name="cloudgames-com" width="450" height="530" frameborder="0" scrolling="no"></iframe>
-</div>
+	<!-- Navigation bar-->
+	<div class="row"> 
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<!--container-->
+			<div class="container" style="margin-top: 10px; ">
+				<!--navbar header-->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle Navigation</span> <!--device wiith screen reader can only see-->
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					
+					<span><h2>Whiteboard Online</h2></span>
+								
+				</div> <!--navbar header-->
+			
+				<!--navbar-->
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li>&nbsp;&nbsp;</li>
+						<li><a href="/index.html" class="btn btn-success home" style="color:white">
+							<span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;Home</a>
+						</li>
+						<li>&nbsp;&nbsp;</li>
+						<li><a href="/src/whiteboard.html" target="whiteboard tab" data-popup="true" class="btn btn-success whiteboard" style="color:white">
+							<span><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>&nbsp;&nbsp;WhiteBoard</a>
+						</li>
+						<li>&nbsp;&nbsp;</li>
+						<li><a href="/src/christmas.html" class="btn btn-success js" style="color:white">
+							<span><i class="fa fa-jsfiddle" aria-hidden="true"></i></span>&nbsp;&nbsp;XMas</a>
+						</li>
+						<li>&nbsp;&nbsp;</li>
+				
+						<li><a href="/src/game.html" class="btn btn-success game" style="color:white">
+							<span ><i class="fa fa-gamepad" aria-hidden="true"></i></span>&nbsp;&nbsp;Game</a>
+						</li>
+						
+						<li>&nbsp;&nbsp;</li>
+						<li><a href="/webrtc-sdk/index.html" data-popup="true"  target="videocall" class="btn btn-success facetime" style="color:white">
+							<span class="glyphicon glyphicon-facetime-video"></span>&nbsp;&nbsp;Video Calls</a>
+						</li>
+						<li>&nbsp;&nbsp;</li>				
+					</ul>
+					
+				</div> <!--/nabar-->			
+			</div>
+		</nav> <!--end nav-->	
+	</div>
+	<div class="container"> 
+		<!--Game -->
+		<div id="gameframe">
+			<iframe src="https://cloudgames.com/games/html5/doodle-jump-new-en-s-iga-cloud/index.html?pub=10" name="cloudgames-com" width="450" height="530" frameborder="0" scrolling="no"></iframe>
+		</div>
+
+	</div>
+
+	
 
 
 </body>

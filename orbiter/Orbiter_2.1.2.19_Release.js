@@ -793,13 +793,14 @@ net.user1.logger.ConsoleLogger.prototype.updateListener = function (e) {
            + e.getLevel() + ": " + bufferSpace + e.getMessage());
 };
 
-/** @private */ 
+/** @private 
 net.user1.logger.ConsoleLogger.prototype.out = function (value) {
   if (typeof console === "undefined" || typeof console.log === "undefined") {
     return;
   }
-  console.log(value);
-};
+ // console.log(value);
+};aa
+*/
 
 /** @private */ 
 net.user1.logger.ConsoleLogger.prototype.dispose = function () {

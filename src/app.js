@@ -79,7 +79,7 @@ function roomSelectListener(roomIdSelected){
 		publish_key     :  "pub-c-f32be598-97ac-484b-a2ee-1ea621f2093e",
 		subscribe_key   :  "sub-c-893d6b7c-795d-11e7-a29a-02ee2ddab7fe",
 		leave_on_unload : true,
-		ssl		: document.location.protocol === "https:"
+		ssl		: document.location.protocol === "https://onlinewhiteboard.herokuapp.com"
 	});
 
 
@@ -92,6 +92,7 @@ function roomSelectListener(roomIdSelected){
 				document.getElementById('unit').textContent = 'Users';
 			}
    			document.getElementById('occupancy').textContent = m.occupancy;
+
    			var p = document.getElementById('occupancy').parentNode;
    			p.classList.add('anim');
    			p.addEventListener('transitionend', function(){p.classList.remove('anim');}, false);
